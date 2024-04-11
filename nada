@@ -1,0 +1,173 @@
+* {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        display: flex;
+        flex-direction: row; /* se ordenan los elementos en forma de filas */
+        flex-wrap: wrap; /*se acomoda si no entra en la pantalla?*/
+    }
+    .container{
+        position:relative; /*para que los elmenetos internos los pueda posicionar relativamente*/
+    }
+    .header{ /*lleva punto o no?*/
+        width: 100%;
+        display: flex;
+        align-items:center
+    }
+    h1 {
+        position: absolute; /* EL ELEMENTO PASA A ESTAR EN UNA CAPA SUPERIOR */
+        top: 15vh;
+        font-size: 48pt;
+        left:0;
+        right: 0;
+        text-align: center;
+        width: 100vw;
+    
+    }
+
+
+    nav {
+        margin-top: 2vw;
+        margin-right: 100vw;
+        background-color: blueviolet;
+    }
+    ul {
+        list-style: none;
+        display: flex; /*para que los elemntos se muestren en linea*/
+    }
+
+    li {
+        margin-bottom: 1vh;
+        margin-right:10px; /*espacio entre elementos de la lista*/
+    }
+    .main{
+        position:absolute;height:400px;
+        background-color: blanchedalmond;
+    }
+    .footer{background-color: blue;height:250px; width: 100%;position: relative;}
+
+    #logo{
+        width:120px;
+        height:120px;
+        margin-right: 500px;
+    }
+    ----------
+    *{
+        padding:0%;
+        margin:0%;
+    }
+    body{
+        background-color:bisque;
+    }
+    header{
+        background-color:aliceblue;
+        position:sticky;
+    }
+    #logo {
+        margin-top: 10px; /* Distancia desde la parte superior */
+        margin-left: 10px; /* Distancia desde la izquierda PORQUE ABAJO EN EL HEADER EL MARGEN ES CHICO*/   
+        width: 100px; /* Tamaño del logo */
+        height: 100px; /* Permitir que la altura se ajuste automáticamente */
+    }
+    .primer-p {
+        text-align: center; /* Centrar el texto horizontalmente */
+        font-size: 20px; /* Tamaño de fuente */
+    }
+    nav {
+        float: right; /* Colocar el nav a la derecha */
+        margin-right: 40px; /* Espacio entre el nav y el margen derecho */
+        margin-top:50px;
+    }
+    nav ul li:last-child {
+        margin-right: 0; /* Eliminar el margen derecho del último elemento de la lista */
+    }
+    
+    main{
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+    h1 {
+        text-align: center; /* Para centrar el texto horizontalmente */
+        font-size: 50px; /* Tamaño de fuente más grande */
+        margin-bottom: 20px; /* Espacio inferior */
+        width: 100vw;
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+    .informacion {
+        display: block; /* Convertir en bloque para centrar horizontalmente */
+        text-align: center; /* Centrar horizontalmente */
+        margin-top: 20px; /* Espacio superior */
+        padding: 10px 20px; /* Espaciado interno para hacer que el botón sea más grande */
+        border: 2px solid black; /* Agregar un borde de 2px sólido negro */
+        text-decoration: none; /* Eliminar la subrayado predeterminado del enlace */
+        color: black; /* Color del texto */
+        margin-bottom:20px;
+    }
+    nav ul {
+        list-style-type: none;
+    }
+    
+    nav ul li {
+        display: inline-block; /* Mostrar elementos de lista en línea */
+        margin-right: 10px; /* Espacio entre elementos de lista */
+    }
+    
+    
+------------    
+
+<!DOCTYPE html> <!-- TIPO DE DOCUMENTO QUE VAMOS A ESCRIBIR -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- UTF-8 ES LA CODIFICACIÓN DEL CONTENIDO DE LA WEB-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- VIEWPORT ES PARA QUE LA WEB SE ADAPTE AL TAMAÑO DE LA PANTALLA DEL DISPOSITIVO -->
+    <title>PAGINA WEB ANA</title> <!-- TITULO DE LA WEB -->
+
+    <!-- Agregamos CSS -->
+    
+</head>
+<body>
+        <header>
+            <img src="./images/IMG_2231.JPG" alt="logo del sitio web" id="logo">
+            <nav> <!-- NOS REFERIMOS A LA NAVEGACIÓN DEL SITIO -->
+                <ul> <!-- LISTA DESORDENADA -->
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li> <!-- ELEMENTOS DE LISTA HOME -->
+                    <li>
+                        <a href="nosotros.html">QUIENES SOMOS</a>
+                    </li> <!-- ELEMENTOS DE LISTA NOSOTROS -->
+                    <li>
+                        <a href="contacto.html">CONTACTO</a>
+                    </li> <!-- ELEMENTOS DE LISTA LISTADO DE CONTACTO -->
+                    <li>
+                        <a href="productos.html">PRODUCTOS</a>
+                    </li> <!-- ELEMENTOS DE LISTA INFORMACION -->
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>POTERIE</h1>
+            <p class="primer-p">Emprendimeinto de vajilla de ceramica hecha a mano, donde cada pieza de ceramica es mas que un objeto;es una obra de arte que transforma tu hogar</p>
+            <div class="boton">
+            <a href="#" class="informacion">INFORMACION</a>
+            </div>
+            <div class="imagen principal">
+                <img src="images/IMG_2258.JPG" alt="ceramicos" id="ceramicos">
+            </div>
+            <h2>Tipos de arcilla /h2>
+            <p>trabajamos con dos tipos de arcilla: roja y gris </p>
+            <div class="izquierda">
+                <img src="images/IMG_2259.JPG" alt="Arcilla roja" id="arcilla roja">
+                <div class="texto-abajo">La arcilla roja es...</div>
+            <div class="derecha">
+                <img src="images/IMG_2260.JPG" alt="Arcilla Gris" id="arcilla gris">
+                <div class="texto-abajo2">La arcilla gris es...</div>
+            </div>
+        </main>
+        <div class="footer"></div>
+    </div>
+    
+
+

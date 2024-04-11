@@ -1,0 +1,75 @@
+.logo{
+    height: 60px;
+    width: 60px;
+}
+/*header{
+    position:fixed;
+}*/
+body{
+    background-color: bisque;
+}
+h1 {
+     /* EL ELEMENTO PASA A ESTAR EN UNA CAPA SUPERIOR */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 48pt;
+    left:0;
+    right: 0;
+    text-align: center;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.6);
+    font-family: "Concert One", sans-serif; /*puse el tipo de letra en h1*/
+}
+a{
+    color:black
+}
+a{
+    text-decoration:none /*porque juntos no me deja*/
+}
+
+.submenu{
+    display:none
+}
+
+.submenu li{
+    display:block
+}
+nav ul li:hover .submenu {
+    display: block;
+  }
+.submenu2{
+    display:none
+    /*left=0;, porque si agrego esto no se me ve bien*/ 
+}
+
+.submenu2 li{
+    display:block
+}
+
+.submenu:hover .submenu2 {
+    display: block;
+  }
+.info-p{
+    display:flex; /*activo flexbox*/
+    align-items:center; /*ventras elementos de manera vertical por la altura, predeterminadamnete por el flex ya estan al lado los hijos*/
+    justify-content:center; /*ajusta espacio entre los elementos hijos*/
+}
+.img-container{
+    width:50%;
+    height:auto;
+}
+.img2{
+    margin-top: 30px;
+    margin-bottom:30px;
+    left:20px;
+    height: 300px;
+    width:300px;
+}
+.texto1{
+    width:50%
+    
+}
+.texto1 h2{
+    font-size:20px
+}
+
