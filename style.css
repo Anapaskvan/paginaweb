@@ -178,5 +178,9 @@ footer {
         width: 40vw;
     }
     /* CSS DE PRODUCTO TERMINA ACÃ */
+    /*CSS DE CONTACTO*/
+    .texto-contacto{
+        font-size:45pt;
+    }
 }
 
