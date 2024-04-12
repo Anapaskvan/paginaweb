@@ -9,7 +9,7 @@ body{
     background-color: bisque;
 }
 h1 {
-     /* EL ELEMENTO PASA A ESTAR EN UNA CAPA SUPERIOR */
+     
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 48pt;
@@ -24,9 +24,9 @@ a{
     color:black
 }
 a{
-    text-decoration:none /*porque juntos no me deja*/
+    text-decoration:none 
 }
-
+/*CAMBIAR SUB MENU POR UNO DE LO QUE NOS DIERON AL FINAL DE LA CLASE*/
 .submenu{
     display:none
 }
@@ -51,25 +51,132 @@ nav ul li:hover .submenu {
   }
 .info-p{
     display:flex; /*activo flexbox*/
-    align-items:center; /*ventras elementos de manera vertical por la altura, predeterminadamnete por el flex ya estan al lado los hijos*/
+    align-items:center; /*Centras elementos de manera vertical por la altura, predeterminadamnete por el flex ya estan al lado los hijos*/
     justify-content:center; /*ajusta espacio entre los elementos hijos*/
+    margin-top: 20px;
 }
 .img-container{
-    width:50%;
-    height:auto;
+    width:50vw;
+    /* height:auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .img2{
-    margin-top: 30px;
+    /* margin-top: 30px;
     margin-bottom:30px;
-    left:20px;
-    height: 300px;
-    width:300px;
+    left:20px; */
+    /* height: 300px;
+    width:300px; */
+    width: 90%;
+    margin: auto;
 }
 .texto1{
     width:50%
     
 }
 .texto1 h2{
-    font-size:20px
+    width: 90%;
+    font-size: 32pt;
+    text-align: justify;
+    margin: auto;
+}
+
+.card img {
+    width: 40vw;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.section-tipo-arcilla {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+}
+
+.submenu2 li {
+    display: flex;
+    justify-content: end;
+}
+
+.subtitulo {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 32pt;
+    font-weight: bold;
+}
+
+/* CSS DE PRODUCTO COMIENZA ACÃ */
+.lista-objetos {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    width: 70vw;
+}
+
+.lista-objetos li {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+.lista-objetos li section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.contendor-descripcion {
+    flex-direction: column;
+}
+
+.lista-objetos li section img {
+    width: 25vw; /*ES DE TODO O DE SU RECUADRO, AL INSPECCIONAR CREO QUE DE LOS 70VW QUE LE DI, PREGUNTAR?*/
+    margin: auto;
+}
+
+/* CSS DE PRODUCTO TERMINÃ ACÃ */
+
+footer {
+    margin-top: 30px;
+}
+
+/* @media only screen and (max-width: 460) {
+    .info-p {
+        flex-direction: column;
+    }
+} */
+
+@media (max-width: 460px) {
+    .info-p {
+        flex-direction: column;
+    }
+
+    .img-container {
+        width: 90vw;
+    }
+
+    .texto1 {
+        width: 90vw;
+    }
+
+    .texto1 h2 {
+        font-size: 18pt;
+    } 
+
+    /* CSS DE PRODUCTO COMIENZA ACÃ */
+    .lista-objetos { /* este es el ul */
+        width: 95vw;
+    }
+
+    .lista-objetos li section img {
+        width: 40vw;
+    }
+    /* CSS DE PRODUCTO TERMINA ACÃ */
 }
 
