@@ -4,11 +4,11 @@
 }
 header{
     position:fixed;
+    z-index:1000;
     top: 0; /*ya que es lo primero*/
     left:0;
     width:100%;
     margin-bottom: 20px;
-    z-index: 1000;
 }
 body{
     background-color: bisque;
@@ -27,6 +27,9 @@ h1 {
     width: 100vw;
     background-color: rgba(255, 255, 255, 0.6);
     font-family: "Concert One", sans-serif; /*puse el tipo de letra en h1*/
+}
+#carouselExampleAutoplaying{
+    position:relative;
 }
 a{
     color:black
@@ -147,6 +150,13 @@ nav ul li:hover .submenu {
     width: 25vw; /*ES DE TODO O DE SU RECUADRO, AL INSPECCIONAR CREO QUE DE LOS 70VW QUE LE DI, PREGUNTAR?*/
     margin: auto;
 }
+.boton-comprar{
+    background-color:blanchedalmond
+}
+.boton-vaciar{
+    background-color: blanchedalmond
+    
+}
 
 /* CSS DE PRODUCTO TERMINÃ ACÃ */
 
@@ -159,6 +169,7 @@ footer {
         flex-direction: column;
     }
 } */
+
 
 @media (max-width: 460px) {
     .info-p {
