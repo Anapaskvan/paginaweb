@@ -207,6 +207,11 @@ footer {
     font-family: "Concert One", sans-serif;
     background-color: blanchedalmond; /*que le pasa esto que no cambia*/
 }
+.footer-carrito{ /*QUE LE PASA*/
+    position:fixed;
+    bottom:0;
+    width:100%
+}
 @media (max-width: 460px) {
     .info-p {
         flex-direction: column;

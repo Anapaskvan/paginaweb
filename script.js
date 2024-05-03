@@ -16,16 +16,21 @@ function mostrarcarrito(){ //creo la funcion para ir mostrando las cosas en el c
     let listaproductos='' //creo mi variable donde van a estar mis listas de productos vacia
     for (let producto in carrito){ //recorro cada prdocuto del carrito
         listaproductos += '<li>'+producto+'-'+carrito[producto].precio+'x'+carrito[producto].cantidad+'</li>'//aqui los muestrso con su precio y cantidad, esto al estar al finla de la funcion agregar al carrito, se va actualizando
-
+        /*<button onclick="quitarDelCarrito('${producto}')">Quitar</button>
+                <button onclick="aumentarCantidad('${producto}')">+</button>
+                <button onclick="disminuirCantidad('${producto}')">-</button> </li> */
     }
-    console.log(listaproductos)
-    console.log("hola")
+    //HASTA ACA ENTRA
     let listaproductoselement=document.getElementById("listaproductos_") // Busco el elemento con el id "listaProductos" y lo guardo en la variable listaProductosElement. Esto lo que hace es que toda modificacion que le haga a esta varibale en java, le ocurre a mi variable en el html
-    console.log(listaproductoselement)
-    console.log("viendo si entro al inner")
-    listaproductoselement.innerHTML=listaproductos
-    console.log(listaproductoselement)
-    console.log('es la segunda')
+    // LO DEVUELVE NULL A LA LISTA
+    console.log("antes de entrar al if")
+    if(listaproductoselement){ // si existe entonces:
+        listaproductoselement.innerHTML=listaproductos //que tenga el mismo contenido que listaproductos
+        console.log("hola entre al if")
+    }
+    console.log("despues del if")
+}
+
     /*if(listaproductoselement){// Si existe listaProductosElement, cambio su contenido por la lista de productos.
         //no entra
         console.log(listaproductos)
@@ -35,7 +40,6 @@ function mostrarcarrito(){ //creo la funcion para ir mostrando las cosas en el c
         console.log("HICE EL PASAJE")*/
     //console.log(listaproductoselement)
     //console.log("ACA ENTRE A LO QUE ES LA LISTA HTML")
-}
 
 function limpiarcarrito(){//creo una funcion para limpiar el carrito
     carrito={} //lo vuelvo a vaciar
@@ -52,3 +56,26 @@ function mostrartotal(){//funcion para mostrar el total del carrito
     console.log($total)
     $total.textContent = "El monto es: $" + total_; // Cambio el contenido de $total por el total. y uso textcontent para que no lo analice como html
 }
+
+//------------------------
+/* function quitarDelCarrito(nombre) {
+    delete carrito[nombre];
+    mostrarCarrito();
+    mostrarTotal();
+}
+function aumentarCantidad(nombre) {
+    carrito[nombre].cantidad++;
+    mostrarCarrito();
+    mostrarTotal();
+}
+function disminuirCantidad(nombre) {
+    if (carrito[nombre].cantidad > 1) {
+        carrito[nombre].cantidad--;
+        mostrarCarrito();
+        mostrarTotal();
+    } otra opcion, hago lo del else de abajo tambien:
+    else:
+        quitardelcarrito(nombre)
+}
+
+*/
