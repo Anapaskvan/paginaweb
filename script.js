@@ -19,23 +19,29 @@ function mostrarcarrito(){ //creo la funcion para ir mostrando las cosas en el c
 
     }
     console.log(listaproductos)
+    console.log("hola")
     let listaproductoselement=document.getElementById("listaproductos_") // Busco el elemento con el id "listaProductos" y lo guardo en la variable listaProductosElement. Esto lo que hace es que toda modificacion que le haga a esta varibale en java, le ocurre a mi variable en el html
-    if(listaproductoselement){// Si existe listaProductosElement, cambio su contenido por la lista de productos.
+    console.log(listaproductoselement)
+    console.log("viendo si entro al inner")
+    listaproductoselement.innerHTML=listaproductos
+    console.log(listaproductoselement)
+    console.log('es la segunda')
+    /*if(listaproductoselement){// Si existe listaProductosElement, cambio su contenido por la lista de productos.
         //no entra
         console.log(listaproductos)
         console.log("hola")
         listaproductoselement.innerHTML=listaproductos // Cambio el contenido de listaProductosElement por la lista de productos. inner asi puede interpretarlo como html
         console.log(listaproductoselement)
-        console.log("HICE EL PASAJE")
-    }
-    console.log(listaproductoselement)
-    console.log("ACA ENTRE A LO QUE ES LA LISTA HTML")
+        console.log("HICE EL PASAJE")*/
+    //console.log(listaproductoselement)
+    //console.log("ACA ENTRE A LO QUE ES LA LISTA HTML")
 }
+
 function limpiarcarrito(){//creo una funcion para limpiar el carrito
     carrito={} //lo vuelvo a vaciar
     mostrarcarrito()//asi se actualiza la lista de productos, que es la que se va mostrar en la pagina
     let $total=document.getElementById("total")
-    $total.textContent="0"//Cambio el contenido de $total por un string de 0.
+    $total.textContent=""//Cambio el contenido de $total por un string de 0.
 }
 function mostrartotal(){//funcion para mostrar el total del carrito
     let total_=0 //empiezo siempre en 0
