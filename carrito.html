@@ -60,11 +60,12 @@
           <!-- TITULO -->
           <h1>CARRITO DE COMPRAS</h1>
           <ul id="listaproductos_"></ul><!--aca se muestran los productos que se agregan al carrito-->
-          <button onclick="limpiarcarrito()" class="boton-vaciar">Vaciar carrito</button><!--este boton va ejecutar la funcion de limpiarlo-->
+          <button onclick="limpiarcarrito()" id="boton-vaciar">Vaciar carrito</button><!--este boton va ejecutar la funcion de limpiarlo-->
           <p id='total'></p> <!--aca se muestra el total del carrito-->
+          <p id="carritoVacio"></p>
       </main>
       <!-- INICIO FOOTER -->
-    <footer claas="footer-carrito">
+    <footer>
       <div class="card text-center">
         <div class="card-body">
             <h5 class="card-title">Ana Paskvan</h5>
@@ -78,6 +79,6 @@
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script> 
-      <script src="script.js"></script>
+      <script src="carrito.js"></script>
 
 </body></html>
