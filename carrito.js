@@ -10,7 +10,7 @@ function mostrarcarrito(){ //creo la funcion para ir mostrando las cosas en el c
     let listaproductos='' //creo mi variable donde van a estar mis listas de productos vacia
 
     for (let producto in carrito){ //recorro cada prdocuto del carrito
-        listaproductos += '<li>'+ `<section class="contenedor-imagen"><img src="${carrito[producto].imagen}" width="200px" height="200px" alt="${producto}" /></section>` +producto+'-'+carrito[producto].precio+'x'+carrito[producto].cantidad+ `<button onclick="aumentarCantidad('${producto}')">+</button>` + `<button onclick="disminuirCantidad('${producto}')">-</button>` + '</li>'//aqui los muestrso con su precio y cantidad, esto al estar al finla de la funcion agregar al carrito, se va actualizando
+        listaproductos += '<li>'+ `<section class="imagen-carrito"><img src="${carrito[producto].imagen}" width="200px" height="200px" alt="${producto}" /></section>` +producto+'-'+carrito[producto].precio+'x'+carrito[producto].cantidad+ `<button onclick="aumentarCantidad('${producto}')">+</button>` + `<button onclick="disminuirCantidad('${producto}')">-</button>` + '</li>'//aqui los muestrso con su precio y cantidad, esto al estar al finla de la funcion agregar al carrito, se va actualizando
     }
 
     //HASTA ACA ENTRA
