@@ -48,104 +48,63 @@
                 <a class="nav-link" href="contacto.html" >Contacto</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="carrito.html">Carro de compras</a>
+                <a class="nav-link" href="carrito.html"
+                   >Carro de compras</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="calculadora.html">Calculadora</a>
-            </li>
+                <a class="nav-link" href="calculadora.html">Calculadora</a>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
     <main>
-        <!-- TITULO -->
-        <h1>PRODUCTOS DE ARCILLA ROJA</h1>
-        <ul class="lista-objetos">
-          <li>
-              <!-- izq -->
-              <section class="contenedor-imagen">
-                  <!-- IMAGEN -->
-                  <img src="images/Unknown.jpeg" alt="" />
-              </section>
-              <!-- der -->
-              <section class="contendor-descripcion">
-                  <!-- TITULO DEL PRODUCTO -->
-                  <h2>
-                      Plato de tostada
-                  </h2>
-                  <!-- PRECIO -->
-                  <p>$ 7000.00</p>
-                  <button onclick="agregaralcarrito('Platodetostada',7000,'images/Unknown.jpeg')"class="boton-comprar" > Agregar al Carrito</button>
-              </section>
-          </li>
-          <li>
-              <!-- izq -->
-              <section class="contenedor-imagen">
-                  <!-- IMAGEN -->
-                  <img src="images/Unknown-1.jpeg" alt="" />
-              </section>
-              <!-- der -->
-              <section class="contendor-descripcion">
-                  <!-- TITULO DEL PRODUCTO -->
-                  <h2>
-                      Tasa pelicula
-                  </h2>
-                  <!-- PRECIO -->
-                  <p>$ 15000.00</p>
-                  <button onclick="agregaralcarrito('tasapelicula',15000,'images/Unknown-1.jpeg')" class="boton-comprar"> Agregar al Carrito</button>
-              </section>
-          </li>
-          <li>
-              <!-- izq -->
-              <section class="contenedor-imagen">
-                  <!-- IMAGEN -->
-                  <img src="images/Unknown-2.jpeg" alt="" />
-              </section>
-              <!-- der -->
-              <section class="contendor-descripcion">
-                  <!-- TITULO DEL PRODUCTO -->
-                  <h2>
-                      Portavasos
-                  </h2>
-                  <!-- PRECIO -->
-                  <p>$ 5000.00</p>
-                  <button onclick="agregaralcarrito('Portavasos',5000,'images/Unknown-2.jpeg')" class="boton-comprar"> Agregar al Carrito</button>
-              </section>
-          </li>
-          <li>
-              <!-- izq -->
-              <section class="contenedor-imagen">
-                  <!-- IMAGEN -->
-                  <img src="images/Unknown-3.jpeg" alt="" />
-              </section>
-              <!-- der -->
-              <section class="contendor-descripcion">
-                  <!-- TITULO DEL PRODUCTO -->
-                  <h2>
-                      Plato para pizza
-                  </h2>
-                  <!-- PRECIO -->
-                  <p>$ 6000.00</p>
-                  <button onclick="agregaralcarrito('Platoparapizza',6000,'images/Unknown-3.jpeg')"class="boton-comprar" > Agregar al Carrito</button>
-                </section>
-          </li>
-          </ul>
+        <section>
+          <h1>Calculadora</h1>
+        </section>
+        <body>
+            <div class="calculator-container">
+              <div class="calculator">
+                <h2 class="calculator-title">Estimador de Tiempo de Entrega para pedidos personalizados</h2>
+                <label for="material" class="calculator-label">Material:</label>
+                <select id="material" class="calculator-select">
+                  <option value="roja">Arcilla Roja</option>
+                  <option value="gris">Arcilla Gris</option>
+                </select><br><br>
+                
+                <label for="size" class="calculator-label">Tamaño:</label>
+                <select id="size" class="calculator-select">
+                  <option value="chico">Chico</option>
+                  <option value="mediano">Mediano</option>
+                  <option value="grande">Grande</option>
+                </select><br><br>
+          
+                <button class="calculator-button" onclick="calcularTiempo()">Calcular Tiempo</button><br><br>
+          
+                <div id="resultado" class="calculator-result"></div>
+              </div>
+            </div>
+          
+            <script src="script.js"></script>
+          </body>
+          </html>
     </main>
     <!-- INICIO FOOTER -->
     <footer>
-      <div class="card text-center">
-        <div class="card-body">
-            <h5 class="card-title">Ana Paskvan</h5>
-            <p class="card-text">Para más información</p>
-            <a href="informacion.html" class="btn btn-primary">Información</a>
+        <div class="card text-center">
+          <div class="card-body">
+              <h5 class="card-title">Ana Paskvan</h5>
+              <p class="card-text">Para más información</p>
+              <a href="informacion.html" class="btn btn-primary">Información</a>
+          </div>
         </div>
-      </div>
-    </footer>
-    <!-- FIN FOOTER -->
+      </footer>
+      <!-- FIN FOOTER -->
+    
     <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
     <script src="script.js"></script>
-</body></html>
+    </html>

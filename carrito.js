@@ -81,5 +81,16 @@ function disminuirCantidad(nombre) {
 
     localStorage.setItem("carrito", JSON.stringify(carrito)) //guardo en el local storage el carrito, lo paso a string
 }
+function realizarCompra() {
+    if (Object.keys(carrito).length === 0) {
+        alert("No se puede realizar la compra porque el carrito está vacío.");
+    } else {
+        alert("¡Compra exitosa!");
+        carrito = {}; // Vacía el carrito
+        localStorage.setItem("carrito", JSON.stringify(carrito)); // Actualiza el localStorage
+        mostrarcarrito(); // Actualiza la visualización del carrito en la página
+    }
+}
+
 
 document.addEventListener("load", mostrarcarrito()) // cuando se carga la pagina, muestro el carrito
